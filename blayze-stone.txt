@@ -141,7 +141,14 @@ Stretch Questions
       set it to 'display: inline-block'.
 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+      div, h1, and p tags are display block by default. a and span tags are inline by default. img tag is inline-block by default.
+
     5. In your own words, explain the box model. What is the fix for the box model? 
+      The box model defines how much space an element takes up on the page. There are four elements that make up the box model. Content, padding, border, and margin.
+    Content is specifically referring to the space taken up by the content of the element (text, images etc). Padding is 
+    additional space seperating the content and border, Border can be styled around the content and padding taking up more space. 
+    And margin is the space between the border of the content and everything else on the page.
+      'box-sizing: border-box' is the box model fix.
 
 
 
