@@ -2,42 +2,131 @@ https://codepen.io/blayze-s/pen/bGdaPdo?editors=1100
 
     1. What is Semantic HTML? 
       HTML that gives meaning to our content such as nav, section, footer, h1-h6, etc...
+    
     2. What is HTML used for? 
-    3. What is an attribute and where do we put it? 
+      To create a document for display on the web.
+
+    3. What is an attribute and where do we put it?
+      Attributes are keywords used to control an elements behavior. They are placed inside the opening tag of an element.
+
+
     4. What is the h1 tag used for? How many times should I use it on a page?
+      The h1 tag is the most important heading on the page and should only be used once.
+
     5. Name two tags that have required attributes
-    6. What do we put in the head of our HTML document? 
-    7. What is an id? 
+      'img' and 'a' tags. 
+
+    6. What do we put in the head of our HTML document?
+      Metadata; the page's title, styles, scripts etc...
+
+    7. What is an id?
+      An id is an attribute with a unique name that can only be used once.
+
     8. What elements can I add an id to? 
-    9. How many times can I use the same id on a page? 
+      Any element.
+
+    9. How many times can I use the same id on a page?
+      Only once.
+
     10. What is a class? 
+      A class is an attribute with a unique name that can be used on multiple elements for shared styling.
+
     11. What elements can I add a class to? 
+      Any element.
+
     12. How many times can I use the same class on a page? 
+      Any number of times.
+
     13. How do I get my link to open in a new tab?
-    14. What is the alt attribute used for? 
+      with the attribute "target" set to "_blank" like so, "<a href="website.com" target="_blank">link</a>
+
+    14. What is the alt attribute used for?
+      It is used to describe in text an image when it cannot be rendered and for screen readers.
     15. How do I reference an id?
+      #id
+
     16. What is the difference between a section and a div
-    17. What is CSS used for? 
+      A section element gives meaning to the content in between it's opening and closing tag. In contrast, a div gives zero meaning.
+
+    17. What is CSS used for?
+      To style an html page 
+
     18. How to we select an element? Example - every h2 on the page
+      elementName { styles }
+
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+      A class can be reused on different elements any number of times but each Id can only be used once.  
+    A class should be used if you have multiple elements with the same styles. An Id should be used when you need to link an anchor tag to a specific section on your webpage or 
+    when you have an element that needs specific styles which will only be used once. 
+
     20. How do we select classes in CSS?
+      .className
+
     21. How do we select a p element with a single class of “human””?
+      p.human
+
     22. What is a parent child selector? When would this be useful? 
+      The parent child selector is written as 'parent>child'. It selects elements with a specific parent. elements that are not direct 
+    children of the parent element are not selected. One situation this selector could be useful in is if you wanted to select li tags 
+    in an unordered list, while ignoring the grandchildren li tags in any embedded lists within the children li tags.
+
     23. How do you select all links within a div with the class of sidebar?
+      div a.sidebar
+
     24. What is a pseudo selector?
+      A pseudo selector selects an element when that element is in a certain selector. For example 'a:hover' selects an anchor tag that is being hovered by the mouse.
+
     25. What do we use the change the spacing between lines?
+      line-height.
+
     26. What do we use to change the spacing between letters?
+      letter-spacing.
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+      text-transform
+
     28. How do I add a 1px border around my div that is dotted and black?
+      border: dotted 1px black;
+
     29. How do I select everything on the page? 
+      * { }
+
     30. How do I write a comment in CSS?
+      /* comment here */
+
     31. How do I find out what file I am in, when I am using the command line? 
+      pwd
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+      ls
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
-    34. Why should I use version control? 
+      "rm fileName". you should be careful when using the 'rm' command, because you will not 
+    get a confirmation prompt, and you cannot restore the file afterwords.
+
+    34. Why should I use version control?
+       Version control allows multiple people to work on the same codebase at the same time, thus making collaboration easier. Version control also allows you to 
+    revert to an older version of the codebase if something is breaks.
+
     35. How often should I commit to github?
-    36. What is the command we would use to push our repo up to github? 
-    37. Walk me through Lambda's git flow. 
+      Whenever a big change/addition is made or when a specific task has been completed. Also every 20 minutes is a good rule of thumb.
+
+    36. What is the command we would use to push our repo up to github?
+      Git push
+
+    37. Walk me through Lambda's git flow.
+      1. Fork the project repo.
+      2. Add TL as a collaborator by clicking settings > collaborators > and searching for their username, full name, or email.
+      3. Copy the HTTPS link from the 'Clone or download' button inside your forked repo.
+      4. Use the cd command inside CLI to go to the target directory to clone the repo in.
+      5. Use 'git clone <repo-link>' to clone the repo inside of the directly you are currently in.
+      6. cd into the cloned repo.
+      7. Use 'git checkout -b firstname-lastname' to create a branch.
+      8. Use 'git add .' to add all changes for committing.
+      9. Use 'git commit -m "Detailed message about the commit"' to commit the changes added.
+      10. Use 'git push -u origin branch-name' to push the branch onto GitHub.
+      11. Submit a pull request insuring to change the base repo option from the original repo to the forked repo.
+      12. Add the TL as a reviewer for the pull request. Either during the submittion process, or after.
 
 Stretch Questions
 
